@@ -2,6 +2,8 @@
 <html lan='en'>
     <!--
         Author: Angelo Goduto
+        Credit: Code with Ania Kubow (Youtube)
+            She helped with submitting through email
     -->
 <head>
     <meta charset='UTF-8'>
@@ -28,11 +30,11 @@
         After completeing your task, we will contact you about what we have achieved!***</h3></center>
         <br /><br />
         <center><form>
-            Enter your first name: <input type="text" name="First Name" value="First Name">
+            Enter your first name: <input type="text" name="First Name" value="First Name" required>
             <br /><br />
-            Enter your last name: <input type="text" name="Last Name" value="Last Name">
+            Enter your last name: <input type="text" name="Last Name" value="Last Name" required>
             <br /><br />
-            Enter your Lewis email: <input type="text" name="Email" value="Email">
+            Enter your Lewis email: <input type="text" name="Email" value="Email" required>
             <br /><br />
             Male: <input type="radio" name="gender">
             Female: <input type="radio" name="gender">
@@ -47,8 +49,29 @@
                 <option>Graduate Student</option>
             </select>
             <br /><br /><br />
-            
+            <h1>Please fill out the survey below and then click submit at the end. After submitting, an email
+            will be sent to <mark>angeloagoduto@lewisu.edu</mark>. This is my current student email and
+            I will take a look at your responses.</h1>
+            <br /><br />
+            <h1>Would you recommend this University to incoming students?</h1>
+            <br />
+            <h2>Strongly Disagree <input type="radio" name="fave" value="Strongly Disagree">
+            Disagree <input type="radio" name="fave" value="Disagree">
+            Neutral <input type="radio" name="fave" value="Neutral">
+            Agree <input type="radio" name="fave" value="Agree">
+            Strongly Agree <input type="radio" name="fave" value="Strongly Agree">
+            </h2><br /><br />
+            <h3>Please comment below why you chose your answer:</h3>
+            <textarea name="comment" rows="15" cols="80">
+            </textarea>
+
+
 
         </form></center>
+
+        <center><form action="https://formsubmit.co/angeloagoduto@lewisu.edu" method="POST">
+            <input type="hidden" name="_subject" value="Email From Survey!">
+            <button type="submit">Send</button>
+       </form></center>
 </body>
 </html>
